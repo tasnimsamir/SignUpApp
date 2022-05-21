@@ -76,6 +76,15 @@ builder.Services.AddCors(options =>
 app.UseCors(MyAllowSpecificOrigins);
 ```
 
+### Dependencies
+```
+1. Microsoft.EntityFrameworkCore
+2. Microsoft.EntityFrameworkCore.SqlServer
+3. Microsoft.EntityFrameworkCore.Tools
+4. Microsoft.VisualStudio.Web.CodeGeneration.Design
+5. Swashbuckle.AspNetCore
+```
+
 
 ## Client side
 
