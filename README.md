@@ -53,3 +53,34 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
 1. Open .sln file in VS and build it with **IISExpress**
 2. Connect your sqlserver 
 3. Swagger html file will open automatically while building the project to test the APIs
+
+
+### CORS Configuration:
+```
+// Enable cors
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                      });
+});
+```
+```
+//Enable cors
+app.UseCors(MyAllowSpecificOrigins);
+```
+
+
+## Client side
+
+### Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
