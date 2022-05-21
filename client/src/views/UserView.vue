@@ -2,7 +2,7 @@
 <v-app>
     <v-container>
             <v-row align-center justify-center>
-                <v-col cols="3"></v-col>
+                <v-col cols="2"></v-col>
                 <v-col cols="8">
                     <v-card raised class="mx-1 mb-2 cardContainer">
                     <div class="d-flex align-center pa-3 mb-2 title-bg font-weight-bold">
