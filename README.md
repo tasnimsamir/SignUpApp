@@ -44,7 +44,9 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
     ));
 ```
 6. Add Migrations and check Database Connection
+
 ``` add-migration AddUser```
+
 ```update-database```
 
 ### APIs:
