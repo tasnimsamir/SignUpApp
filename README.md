@@ -44,3 +44,12 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
     ));
 ```
 6. Add Migrations and check Database Connection
+
+### APIs:
+1. Register User>> ``` "https://localhost:44365/api/Users [POST] ```
+1. Retrieve User>> ``` "https://localhost:44365/api/Users/userid [GET]```
+
+### Environment Setup:
+1. Open .sln file in VS and build it with **IISExpress**
+2. Connect your sqlserver 
+3. Swagger html file will open automatically while building the project to test the APIs
